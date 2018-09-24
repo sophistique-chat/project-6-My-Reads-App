@@ -8,8 +8,8 @@ class ShelfChanger extends Component {
         return (
             <div className="book-shelf-changer">
                 <select
-                    value = {this.props.currentShelf}
-                    onChange = {
+                    value={this.props.currentShelf}
+                    onChange={
                         (event) => {
                             this.props.changeShelf(
                                 this.props.book, event.target.value
