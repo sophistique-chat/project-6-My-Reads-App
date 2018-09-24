@@ -17,8 +17,8 @@ class Book extends Component {
             <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url("${bookImage}")`}}>
             </div>
                  <ShelfChanger 
-                 book ={this.props.book}
-                 currentShelf ={this.props.currentShelf}
+                 book={this.props.book}
+                 currentShelf={this.props.currentShelf}
                  changeShelf={this.props.changeShelf} />
           </div>
             <div className="book-name-wrapper">
@@ -29,13 +29,13 @@ class Book extends Component {
               /*React Router Documentation at https://knowbody.github.io/react-router-docs/api/Link.html*/}
                {
                   <Link 
-                    onClick = {() => {
+                    onClick={() => {
                       return (
                         <Des/>
                       )
                     }
                   }
-                    className="learn-more" to = {{
+                    className="learn-more" to={{
                       pathname: `/main/description/${this.props.book.title}/${this.props.book.authors}/${this.props.book.description}`,
                       state: { authors: this.props.book.authors,
                       bookImage:  this.props.book.imageLinks.thumbnail}
