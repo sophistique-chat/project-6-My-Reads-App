@@ -33,28 +33,28 @@ class BooksApp extends Component {
   render() {
     return (
       <div className="app">
-        <Route exact path = '/search' render={() => (
+        <Route exact path='/search' render={() => (
           <BookSearch changeShelf={this.changeShelf}
             books={this.state.books}
-            currentShelf ={this.props.currentShelf}
+            currentShelf={this.props.currentShelf}
           />
         )}/>
 
-        <Route exact path = '/main' render = {() => (
-           <Main books ={this.state.books}
+        <Route exact path='/main' render={() => (
+           <Main books={this.state.books}
             changeShelf={this.changeShelf}
-            currentShelf ={this.currentShelf}
+            currentShelf={this.currentShelf}
           /> 
         )}/>
         {/* Passing multiple props/params through a <Link/> 
         /*https://stackoverflow.com/questions/37696391/multiple-params-with-react-router*/}
-        <Route exact path = '/main/description/:title/:author/:info/'  render={({ match, location }) => (
+        <Route exact path='/main/description/:title/:author/:info/'  render={({ match, location }) => (
           <Des  
-            location ={location.state}
+            location={location.state}
             params={match.params} 
             changeShelf={this.changeShelf}
             books={this.state.books}
-            currentShelf ={this.props.currentShelf}
+            currentShelf={this.props.currentShelf}
           />
         )}/>
       </div>
