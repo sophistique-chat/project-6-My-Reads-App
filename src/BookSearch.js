@@ -40,7 +40,7 @@ class BookSearch extends Component {
       <div>
         <div className="search-books">
           <div className="search-books-bar">
-            <Link className="close-search" to = '/main'>Close</Link>
+            <Link className="close-search" to='/main'>Close</Link>
             <div className="search-books-input-wrapper">
               <input type="text"
                     placeholder="Search by title or author"
@@ -64,10 +64,10 @@ class BookSearch extends Component {
                         )
                       ))
                       return (
-                        <li key = {newBook.id}>
-                          <Book  book = {newBook}
+                        <li key={newBook.id}>
+                          <Book  book={newBook}
                           changeShelf={this.props.changeShelf}
-                          currentShelf = {defaultShelf}
+                          currentShelf={defaultShelf}
                           /> 
                         </li> 
                       )
