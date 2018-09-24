@@ -12,7 +12,7 @@ class Des extends Component {
                     <div className="list-books-title">
                         <h1>MyReads</h1>
                     </div>
-                    <Link className="close-search" to = '/main'>Close</Link>
+                    <Link className="close-search" to='/main'>Close</Link>
                     <div className="list-books-des">
                         <div className="bookshelf">
                             <h2 className="bookshelf-title">Description</h2>
