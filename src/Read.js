@@ -3,7 +3,7 @@ import Book from './Book'
 
 
 
-class WantToRead extends Component {
+class Read extends Component {
     
     render() {
         return (
@@ -30,4 +30,4 @@ class WantToRead extends Component {
     }
 }
 
-export default WantToRead
+export default Read
