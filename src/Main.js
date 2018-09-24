@@ -42,23 +42,23 @@ class Main extends Component {
         </div>
 
         <CurrentlyReading 
-            books ={this.state.books}
+            books={this.state.books}
             changeShelf={this.changeShelf}
-            currentShelf ={this.props.currentShelf}/>
+            currentShelf={this.props.currentShelf}/>
 
         <WantToRead 
-           books ={this.state.books}
+           books={this.state.books}
            changeShelf={this.changeShelf}
-           currentShelf ={this.props.currentShelf}/>
+           currentShelf={this.props.currentShelf}/>
 
         <Read 
-           books ={this.state.books}
+           books={this.state.books}
            changeShelf={this.changeShelf}
-           currentShelf ={this.props.currentShelf}/>
+           currentShelf={this.props.currentShelf}/>
           {/*Using forceUpdate() method to make sure that currently changed shelf
             /*will display on the search page WITHOUT updating the search page*/}
           <div className="open-search">
-            <Link  onClick = {this.updateShelvedBooks} to ='/search'>Add book</Link>
+            <Link  onClick={this.updateShelvedBooks} to='/search'>Add book</Link>
           </div>
         </div>
       </div>
