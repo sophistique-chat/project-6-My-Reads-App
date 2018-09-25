@@ -27,14 +27,6 @@ class Main extends Component {
     })
   }
 
-  componentWillMount() {
-    this.force()
-  }
-
-  force() {
-    this.forceUpdate()
-  }
-
   render() {
     return (
       <div>
@@ -63,7 +55,7 @@ class Main extends Component {
             /*will display on the search page WITHOUT updating the search page (method implementation help at:
             /*https://github.com/facebook/react/issues/3071)*/}
           <div className="open-search">
-            <Link  onClick={this.force} to='/search'>Add book</Link>
+            <Link to='/search'>Add book</Link>
           </div>
         </div>
       </div>
