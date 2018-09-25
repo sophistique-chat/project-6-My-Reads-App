@@ -27,7 +27,11 @@ class Main extends Component {
     })
   }
 
-  updateShelvedBooks() {
+  componentWillMount() {
+    this.force()
+  }
+
+  force() {
     this.forceUpdate()
   }
 
@@ -56,9 +60,10 @@ class Main extends Component {
            changeShelf={this.changeShelf}
            currentShelf={this.props.currentShelf}/>
           {/*Using forceUpdate() method to make sure that currently changed shelf
-            /*will display on the search page WITHOUT updating the search page*/}
+            /*will display on the search page WITHOUT updating the search page (method implementation help at:
+            /*https://github.com/facebook/react/issues/3071)*/}
           <div className="open-search">
-            <Link  onClick={this.updateShelvedBooks} to='/search'>Add book</Link>
+            <Link  onClick={this.force} to='/search'>Add book</Link>
           </div>
         </div>
       </div>
