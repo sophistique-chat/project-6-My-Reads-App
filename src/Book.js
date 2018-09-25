@@ -36,7 +36,7 @@ class Book extends Component {
                     }
                   }
                     className="learn-more" to={{
-                      pathname: `/main/description/${this.props.book.title}/${this.props.book.authors}/${this.props.book.description}`,
+                      pathname: `/description/${this.props.book.title}/${this.props.book.authors}/${this.props.book.description}`,
                       state: { authors: this.props.book.authors,
                       bookImage:  this.props.book.imageLinks.thumbnail}
                     }}>
