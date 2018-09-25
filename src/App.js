@@ -5,6 +5,7 @@ import BookSearch from './BookSearch'
 import Main from './Main'
 import Des from './Des'
 import './App.css'
+import { Switch, Route } from 'react-router'
 
 
 
@@ -33,6 +34,7 @@ class BooksApp extends Component {
   render() {
     return (
       <div className="app">
+      <Switch>
         <Route exact path='/search' render={() => (
           <BookSearch changeShelf={this.changeShelf}
             books={this.state.books}
@@ -56,6 +58,7 @@ class BooksApp extends Component {
             currentShelf={this.props.currentShelf}
           />
         )}/>
+      </Switch>
       </div>
     )
   }
