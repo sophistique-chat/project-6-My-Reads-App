@@ -38,7 +38,7 @@ class Book extends Component {
                     className="learn-more" to={{
                       pathname: `/description/${this.props.book.title}/${this.props.book.authors}/${this.props.book.description}`,
                       state: { authors: this.props.book.authors,
-                      bookImage:  this.props.book.imageLinks.thumbnail}
+                      bookImage:  this.props.book.imageLinks ? (this.props.book.imageLinks.thumbnail) : ("https://github.com/sophistique-chat/my-pic-bin/blob/master/no-image.jpg?raw=true")}
                     }}>
                     Learn More
                   </Link>
