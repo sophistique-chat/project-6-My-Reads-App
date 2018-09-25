@@ -14,11 +14,11 @@ class Des extends Component {
                     </div>
                     <div className="books-grid-des">
                     <Link className="close-search" to='/search'></Link>
-                    <div className="book-authors-link">Back to Search page</div>
+                    <div className="book-authors-link">Back to the Search page</div>
                     </div>
                     <div className="books-grid-des">
                     <Link className="close-search" to='/'></Link>
-                    <div className="book-authors-link">Back to the library</div>
+                    <div className="book-authors-link">Back to the Library</div>
                     </div>
                     <div className="list-books-des">
                         <div className="bookshelf">
