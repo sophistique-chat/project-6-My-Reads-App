@@ -40,7 +40,7 @@ class BooksApp extends Component {
           />
         )}/>
 {/*Docs for react-router v4 basename feature: https://github.com/facebook/create-react-app/pull/2668/commits/665f5ed6d57848610c43b40995707966378bc2da*/}
-        <Route basename="/main" exact path='/main' render={() => (
+        <Route exact path='/' render={() => (
            <Main books={this.state.books}
             changeShelf={this.changeShelf}
             currentShelf={this.currentShelf}
@@ -48,7 +48,7 @@ class BooksApp extends Component {
         )}/>
         {/* Passing multiple props/params through a <Link/> 
         /*https://stackoverflow.com/questions/37696391/multiple-params-with-react-router*/}
-        <Route exact path='/main/description/:title/:author/:info/'  render={({ match, location }) => (
+        <Route exact path='/description/:title/:author/:info/'  render={({ match, location }) => (
           <Des  
             location={location.state}
             params={match.params} 
