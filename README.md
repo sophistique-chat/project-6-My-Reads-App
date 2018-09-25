@@ -54,8 +54,8 @@
 * `cd` in the project directory.
 * Install all project dependencies with `npm install`.
 * Start the development server with `npm start`.
-* With your server running, the project will automatically open at the URL: `http://localhost:3000/main`.
-* On the `/main` page there are three editable shelves with books:
+* With your server running, the project will automatically open at the URL: `http://localhost:3000`.
+* On the starter page there are three editable shelves with books:
     * use a dropdown menu at each book to move it to the desired shelf;
     * get more information about a book by hitting `Learn More` button;
     * search for the books you're interested in by hittin the `Add` button at the bottom of the page;
