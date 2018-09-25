@@ -39,7 +39,6 @@ class BooksApp extends Component {
             currentShelf={this.props.currentShelf}
           />
         )}/>
-{/*Docs for react-router v4 basename feature: https://github.com/facebook/create-react-app/pull/2668/commits/665f5ed6d57848610c43b40995707966378bc2da*/}
         <Route exact path='/' render={() => (
            <Main books={this.state.books}
             changeShelf={this.changeShelf}
